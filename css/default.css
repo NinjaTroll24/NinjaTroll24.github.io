@@ -1,37 +1,93 @@
+:root {
+    --bg-light-color: rgb(233, 233, 233);
+    --secondary-color: rgb(180, 180, 180);
+}
+
 body {
     margin: 0;
-    background-color: rgb(233, 233, 233);
+    background-color: var(--bg-light-color);
     font-family: 'PT Sans', 'Noto Sans JP', 'Source Sans Pro', sans-serif;
 }
 
+main {
+    padding: 0 1rem;
+}
+
+/******* Header and nav *******/
 header h1 {
     margin: 0;
-    padding: 12px;
+    letter-spacing: 1px;
+    padding: 0.6rem;
     font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+    font-size: 1.7rem;
     text-align: center;
     color: white;
     background-image: url('../res/BackgroundGalaxy.jpg');
 }
 
-nav ul {
-    display: grid;
-    grid-template-areas: ". . .";
+/*
+input[type="search"] {
+    background-color: white;
+    border: 1px solid var(--secondary-color);
+    font-size: 0.8rem;
+}
+*/
+
+header nav {
+    display: flex;
+    justify-content: center;
 }
 
-nav li {
-    
+header ul {
+    display: flex;
+    justify-content: space-between;
 }
 
-nav a {
+header li {
+    display: inline;
+    margin: 0 2rem
+}
+
+header span {
+    border-right: 2px solid var(--secondary-color);
+}
+
+header a {
     text-decoration: none;
     color:black
 }
 
-nav a:hover {
+header a:hover {
     text-decoration: underline;
 }
 
-img {
-    width: 25%;
-    
+/******* Header and nav *******/
+
+#content {
+    margin: 0 calc(2rem + 5vw);
 }
+
+/******* About me *******/
+#about-me-parent {
+    display: flex;
+    justify-content: center;
+}
+
+#about-me {
+    overflow: hidden;
+    padding: 1rem 2.5vw;
+    width: max(40rem);
+    border: var(--secondary-color) solid;
+}
+
+#about-me q {
+    font-size: 1.1rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+#about-me img {
+    float: right;
+    margin: 0.3rem clamp(0.8vw, 50%, 1vw);
+    width: clamp(10rem, 40%, 18rem);
+}
+/******* About me *******/

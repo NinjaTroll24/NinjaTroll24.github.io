@@ -15,6 +15,7 @@
                 <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Source+Code+Pro&family=Noto+Sans+JP&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
                 <link rel="stylesheet" href="css/default.css">
+                <link rel="stylesheet" href="css/main-page.css">
         </head>
         <body>
                 <header>
@@ -22,22 +23,29 @@
                         <nav>
                                 <ul>
                                         <li><a href="#about-me">Sobre mim</a></li>
+                                        <span></span>
                                         <li><a href="#">Projetos</a></li>
+                                        <span></span>
                                         <li><input type="search" placeholder="Pesquisar..."></li>
                                 </ul>
                         </nav>
                 </header>
                 <main>
                         <article>
-                                <h2>Publicações recentes</h2>
-                                <ul></ul>
-                        </article>
-                        <footer>
-                                <div id="about-me">
-                                        <p></p>
-                                        <img src="res/FotoDePerfil.jpg" alt="Minha linda foto de perfil">
+                                <div id="content">
+                                        <h2>Publicações recentes</h2>
+                                        <ul></ul>
                                 </div>
-                        </footer>
+                                <footer id="about-me-parent">
+                                        <section id="about-me">
+                                                <h2>Sobre mim</h2>
+                                                <img src="res/FotoDePerfil.jpg" alt="Minha linda foto de perfil">
+                                                <p>Um curioso autodidata que se interessa por quase qualquer tipo de coisa, e está sempre em busca de mais conhecimento, seja prático ou teórico.</p>
+                                                <p>Criei este site para compartilhar meu conhecimento e me motivar a continuar estudando, mesmo estando desmotivado.</p>
+                                                <q><i>A melhor forma de aprender é ensinando</i></q>
+                                        </section>
+                                </footer>
+                        </article>
                 </main>
         </body>
 </html>
